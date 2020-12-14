@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <title> Abdirahman's Vending Machine</title>
+   <style>
+body {
+    background-color: black;
+}
+h1 {
+    color: red;
+    margin-left: 40px;
+} 
+/*#ItemRows{
+  position: absolute;
+   left: 200px;
+   width: 200px;
+   border: 3px solid #73AD2;
+   padding: 10px;
+} */
+
+button {
+               background-color: #4CAF50;
+               border: none;
+               color: white;
+               padding: 15px 32px;
+               text-align: right;
+               text-decoration: none;
+               display: inline-block;
+               font-size: 16px;
+               margin: 4px 2px;
+               cursor: pointer;
+               height: border-box;
+               width: border-box;
+           }
+</style>  
+  </head>
+
+  <body>
+      <div class="container">
+      <h1>Abdirahman's Vending Machine</h1>
+      <hr/>    
+      <ul class="list-group" id="errorMessages"></ul>  
+                <div class = "row">
+                <div class="col-8">
+                    <div class = "row" id="ItemRows" >              
+                    </div>
+                </div>
+             <div class="col-4">
+                <label for="totalMoney">Total</label>
+                <input type="text" id="totalMoney" placeholder="Total Put In" readonly>
+                <label for="itemNumber">Item Number</label>
+                <input type="text" id="itemNumber" placeholder="Item Number" readonly>
+                <label for="message">Message Board</label>
+                <textarea type="text" id="message" placeholder="Message" height="50" width="50" readonly></textarea>
+                    <div class="form-group">
+                         <button type="button" id="makePurchase">
+                        Make purchase
+                        </button>
+                        <label for="change">Change</label>
+                        <textarea type="text" id="change"  col="1" rows="4" placeholder="change" readonly></textarea>
+                        <button type="button" id="changeToReturned">
+                        Return Change
+                         </button>
+                     </div>
+
+
+                     <div class="form-group">
+                     <button type="button" id="dollar">
+                     Add Dollar
+                     </button>
+                    <button type="button" id="quater">
+                      Add Quater
+                    </button>
+                    <button type="button" id="dime">
+                    Add Dime
+                    </button>
+                    <button type="button" id="nickel">
+                    Add Nickel
+                    </button>
+                    </div> 
+                 </div> 
+                 </div>
+                 </div> 
+      
+      
+    <!-- <Optional JavaScript>
+     jQuery first, then Popper.js, then Bootstrap JS  -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   <script src="vending.js"></script>
+  </body>
+</html> 
+
+
+
+ 
